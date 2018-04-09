@@ -1,0 +1,29 @@
+package test1;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import entity.GiamDoc;
+import entity.NhanVien;
+
+@Controller
+public class AddController {
+
+	@RequestMapping("/")	
+	@ResponseBody
+	public String display() {
+		ApplicationContext context = new ClassPathXmlApplicationContext("IoC.xml");
+		NhanVien nv = (NhanVien) context.getBean("nhanvien");
+		
+		//nv.getInfo();
+		nv.setTenNhanVien("Tran Duy Phuong");
+		System.out.println("");
+		
+	
+	return "trangchu";
+	}
+	
+}

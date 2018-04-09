@@ -1,0 +1,5 @@
+//com.springsource.config.ui.prefs.activePageIndex\:/bai1/src/main/webapp/WEB-INF/Hello-servlet.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/bai1/src/main/webapp/WEB-INF/bai1.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/minishop/src/main/webapp/WEB-INF/minishop-servlet.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/thoitrang/src/main/webapp/WEB-INF/thoitrangDispatcher-servlet.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+eclipse.preferences.version=1
