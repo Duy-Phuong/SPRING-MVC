@@ -2,22 +2,10 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="com.dp"/>
-			<item value="com.duyphuong"/>
-			<item value="aaa"/>
-			<item value="com.Bai1"/>
-			<item value="com.abc"/>
-			<item value="com.tranduyphuong"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="bai1"/>
-			<item value="bai2"/>
-			<item value="aaa"/>
-			<item value="minishop"/>
-			<item value="thoitrang"/>
-			<item value="notests"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -29,7 +17,6 @@
 		</list>
 		<list key="version">
 			<item value="0.0.1-SNAPSHOT"/>
-			<item value="0.0.1"/>
 		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
@@ -51,6 +38,7 @@
 		<item value="531" key="height"/>
 	</section>
 	<section name="MavenProjectWizardArchetypePage">
+		<item value="All Catalogs" key="catalog"/>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
@@ -62,6 +50,10 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\admin1\Documents\workspace-sts-3.9.2.RELEASE\test2\src\main\java\test1\AddController.java"/>
+			<item value="C:\Users\admin1\Documents\workspace-sts-3.9.2.RELEASE\test1"/>
+			<item value="C:\Users\admin1\Documents\workspace-sts-3.9.2.RELEASE\test1\src\main\resources\IoC.xml"/>
+			<item value="C:\Users\admin1\Documents\workspace-sts-3.9.2.RELEASE\thoitrang"/>
 			<item value="C:\Users\admin1\Documents\workspace-sts-3.9.2.RELEASE\bai1\pom.xml"/>
 			<item value="D:\study\năm 3\BT1\New folder"/>
 			<item value="D:\study\năm 3\BT1\bai2"/>
@@ -79,10 +71,18 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.duyphuong.test3"/>
+			<item value="com.duyphuong.test2"/>
+			<item value="com.duyphuong"/>
+			<item value="com.duyphuong.test1"/>
 		</list>
 		<list key="groupId">
+			<item value="com.duyphuong"/>
 		</list>
 		<list key="artifactId">
+			<item value="test3"/>
+			<item value="test2"/>
+			<item value="test1"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

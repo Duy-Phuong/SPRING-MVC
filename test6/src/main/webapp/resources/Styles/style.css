@@ -1,0 +1,139 @@
+@charset "ISO-8859-1";
+* {
+	padding:0px;
+	margin:0px;
+}
+#map {
+	color: orange;
+}
+
+html, body {
+	/* neu k no k can giua dk */
+	height: 100%;
+	min-width: 100%;
+}
+
+#body-login{
+	background-color: powderblue;
+	
+}
+
+#container-login{
+	background-color: white;
+	width: 800px;
+	height: 610px;
+	display: flex;
+	
+}
+
+#container-login-left{
+	background-color: yellow;
+	width: 420px;
+	height: 610px;
+	background-image: url('../img/backgrounddangnhap.png');
+	
+	display: flex;
+	/* cho no hien thi xuong dong */
+	flex-direction: column;
+	
+	justify-content: space-between;
+	color: white;
+	padding: 0px 16px;
+	
+	
+}
+	#top, #bot{
+	display: flex;
+	flex-direction: column;
+	
+	}
+	#top {
+	margin-top:20px;
+	text-align: center;
+	}
+
+
+#body-flex-login{
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	height:100%;
+}
+
+img {
+	margin-right: 5px;
+}
+
+#bot{
+	margin-bottom: 20px;
+}
+
+
+/*end đăng nhập*/
+
+#container-login-right{
+	padding: 0px 16px;	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 70%;
+}
+
+
+#header-top-left {
+	display: inline-block;
+	color: red;
+}
+
+#header-top-right {
+	display: inline-block;
+	color: orange;
+}
+
+#top1 {
+	margin-top:20px;
+	text-align: center;
+	}
+	
+.active{
+	color: red;
+}
+
+#hinh{
+	align-self: flex-end; /*cha la flex*/
+}
+
+input {
+	height: 38px;
+	border: 0px;
+	background-color: #D8D8D8;
+	width: 80%;
+}
+
+.email{
+	background: url('../img/ic_email.png') no-repeat scroll 7px 7px;
+	padding-left:30px;
+background-color: #D8D8D8;
+}
+
+.pass{
+	background: url('../img/ic_lock.png') no-repeat scroll 7px 7px;
+	padding-left:30px;
+background-color: #D8D8D8;
+}
+
+
+#button {
+	padding-left: 15px;
+	background-color: powderblue;
+	width:87%;
+	color: #03A9F4;
+	text-transform: uppercase;
+}
+
+.red{
+	color: red !important;
+	background-color: yellow;
+}

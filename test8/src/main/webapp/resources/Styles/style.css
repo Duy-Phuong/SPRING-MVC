@@ -1,0 +1,372 @@
+@charset "ISO-8859-1";
+* {
+	padding:0px;
+	margin:0px;
+}
+#map {
+	color: orange;
+}
+
+html, body {
+	/* neu k no k can giua dk */
+	height: 100%;
+	min-width: 100%;
+}
+
+#body-login{
+	background-color: powderblue;
+	
+}
+
+body {
+	font-family: 'Lora', serif;
+}
+
+#container-login{
+	background-color: white;
+	width: 800px;
+	height: 610px;
+	display: flex;
+	
+}
+
+#container-login-left{
+	background-color: yellow;
+	width: 420px;
+	height: 610px;
+	background: linear-gradient(
+								 rgba(246, 0, 255, 0.26), 
+								 rgba(232, 2, 2, 0.81)
+								 ), url(../img/dangnhap.jpg);
+	
+	display: flex;
+	/* cho no hien thi xuong dong */
+	flex-direction: column;
+	
+	justify-content: space-between;
+	color: white;
+	padding: 0px 16px;
+	
+	
+}
+	#top, #bot{
+	display: flex;
+	flex-direction: column;
+	
+	}
+	#top {
+	margin-top:20px;
+	text-align: center;
+	}
+
+
+#body-flex-login{
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	height:100%;
+}
+
+img {
+	margin-right: 5px;
+}
+
+#bot{
+	margin-bottom: 20px;
+}
+
+
+/*end đăng nhập*/
+
+#container-login-right{
+	padding: 0px 16px;	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 70%;
+}
+
+
+#header-top-left {
+	display: inline-block;
+	color: red;
+}
+
+#header-top-right {
+	display: inline-block;
+	color: orange;
+}
+
+#top1 {
+	margin-top:20px;
+	text-align: center;
+	}
+	
+.active{
+	color: red;
+}
+
+#hinh{
+	align-self: flex-end; /*cha la flex*/
+}
+
+input {
+	height: 38px;
+	border: 0px;
+	background-color: #D8D8D8;
+	width: 100%;
+}
+
+.email{
+	background: url('../img/ic_email.png') no-repeat scroll 7px 7px;
+	padding-left:30px;
+background-color: #D8D8D8;
+}
+
+.pass{
+	background: url('../img/ic_lock.png') no-repeat scroll 7px 7px;
+	padding-left:30px;
+background-color: #D8D8D8;
+}
+
+
+#button {
+	padding-left: 15px;
+	background-color: powderblue;
+	width:100%;
+	color: #03A9F4;
+	text-transform: uppercase;
+}
+
+/*bat dau xu ly header tai day*/
+#header{
+	background:linear-gradient(
+      rgba(246, 0, 255, 0.08), 
+      rgba(255, 0, 0, 0.18)
+    ), url('../img/background.jpg')no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	height: 640px;
+	
+	
+}
+
+.center {
+	margin-left: 50%;
+	
+}
+
+.nav-item a:hover {
+	color: white !important;
+	background-color: gray;
+}
+
+#cart {
+	width: 31px;
+	height: 35px;
+	margin-left: 10px;
+}
+
+.text {
+	opacity: 0.9;
+	text-align: center;
+	
+	margin-top: 18%;
+	
+}
+
+#info img {
+	width: 40px;
+	height: 40px;
+	
+}
+
+.icon {
+	text-align: center;
+}
+
+
+#info {
+	margin-top: 20px;
+}
+
+/*tieu de sp*/
+.title {
+	margin-top: 20px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+/*san pham*/
+.tinto {
+	width: 300px;
+	height: 400px;
+	overflow: hidden;
+
+	/*layer*/
+	position: relative;
+	margin: 10px;
+	float: left;
+}
+
+img.layer1 {
+	width: 100%;
+	height: 400px;
+}
+
+.xam {
+	width: 300px;
+	height: 400px;
+	background-color: #00000075;
+
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+
+	transition: 0.4s;
+	opacity: 1;
+		
+
+}
+
+.gradient {
+	width: 300px;
+	height: 400px;
+	background-image: linear-gradient(45deg, red 0%, black 100%);
+	
+
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+
+	transition: 0.4s;
+
+		opacity: 0;
+
+}
+
+.hinhvuong {
+	width: 80%;
+	height: 80%;
+	border: 1px solid white;
+
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	z-index: 3;
+
+	opacity: 0;
+	transition: 0.8s;
+	transform: scale(0);
+}
+
+.chuto {
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: arial;
+	position: absolute;
+	
+	right: 30%;
+	z-index: 4;
+
+	top:  80%;
+
+	transition: 0.8s;
+
+}
+
+
+.chunho {
+	font-size: 14px;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: arial;
+	position: absolute;
+	top: 70%;
+	right: 15%;
+	z-index: 5;
+
+	width: 70%;
+
+		opacity: 0;
+		transition: 0.8s;
+		transform: scale(0);
+
+}
+
+/* hieu ung */
+.tinto:hover .chuto{
+	/*casch 1 top: 20%; */
+	transform: translateY(-80px);
+	
+
+}
+
+.tinto:hover .chunho{
+	
+	transform: scale(1);
+	opacity: 1;
+	
+
+}
+
+.tinto:hover .hinhvuong{
+	
+	transform: scale(1);
+	opacity: 1;
+	
+
+}
+
+.tinto:hover .xam {
+	opacity: 0;
+}
+
+.tinto:hover .gradient {
+	opacity: 0.6;
+}
+/*end*/
+
+/*footer*/
+
+
+#footer{
+	margin-top: 42px;
+	color: white;
+	background-color: black;
+	padding:38px;
+	background: linear-gradient(
+      rgba(0, 0, 0, 0.42), 
+      rgba(0, 0, 0, 0.42)
+    ), url("../img/footer1.jpg") no-repeat center center;
+	
+}
+footer img{
+	width: 100%;
+}
+#footer p{
+	text-align: center;
+}
+
+#footer textarea{
+    border: 0;
+    background-color: #D8D8D8;
+    width: 100%;
+}
+
+.title-footer{
+	font-size: 32px;
+}
+
+.button1, .material-textinput, .area {
+	width: 100%;
+}

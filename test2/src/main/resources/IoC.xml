@@ -50,5 +50,8 @@ chay xong cmt lai khi nao run mo ra-->
 	</bean>
 	<bean id="nhanvien" class="entity.NhanVien" scope="prototype" autowire="byType">
 		</bean>
-	
+	<!-- bai 14 -->
+	<bean id="cus" class="test1.CustomLoader" autowire="byType">
+		
+	</bean>
 </beans>
