@@ -12,7 +12,7 @@ import entity.NhanVien;
 import service.NhanVienService;
 
 import org.springframework.transaction.annotation.Transactional;
-
+import org.springframework.ui.ModelMap;
 import org.hibernate.Session;
 @Controller
 @RequestMapping("dangnhap/")
@@ -28,9 +28,9 @@ public class DangNhap {
 //	@Autowired
 //	SessionFactory mySessionFactory;
 	
-	//video 62
-		@Autowired
-		NhanVienService nhanVienService;
+	//video 62 ; //bai 64 dong
+//		@Autowired
+//		NhanVienService nhanVienService;
 	
 	//gia tri truyen vao voi phuong thuc post
 //	@PostMapping
@@ -44,7 +44,7 @@ public class DangNhap {
 ////		}
 //		
 //		Session session = mySessionFactory.getCurrentSession();
-//		//trả v�? gtri đơn
+//		//trả v�? gtri đơn
 //		try {
 //			NhanVien nv = (NhanVien)session.createQuery("from nhanvien where tendangnhap = '" + name + "' and " + "matkhau = '" + pass + "'").getSingleResult();
 //			
@@ -60,18 +60,20 @@ public class DangNhap {
 //		return "dangnhap";
 //	}
 	
-	
-	@PostMapping
-	@Transactional
-	public String XuLyService(@RequestParam String name, @RequestParam String pass ) {
-		
-		//phai dat cai tren vao chu thich neu k 2 ham giong nhau err
-		boolean kt = nhanVienService.kiemTraDangNhap(name, pass);
-		if(kt == true) {
-			System.out.println("dang nhap thanh cong");
-		}else {
-			System.out.println("dang nhap that bai");
-		}
-		return "dangnhap";
-	}
+	//bai 64 dong
+//	@PostMapping
+//	@Transactional
+//	public String XuLyService(@RequestParam String name, @RequestParam String pass, ModelMap model) {
+//		
+//		//phai dat cai tren vao chu thich neu k 2 ham giong nhau err
+//		boolean kt = nhanVienService.kiemTraDangNhap(name, pass);
+//		if(kt == true) {
+//			System.out.println("dang nhap thanh cong");
+//			model.addAttribute("msg", "dang nhap thanh cong");
+//		}else {
+//			System.out.println("dang nhap that bai");
+//			model.addAttribute("msg", "dang nhap that bai");
+//		}
+//		return "dangnhap";
+//	}
 }

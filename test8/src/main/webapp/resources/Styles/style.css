@@ -141,6 +141,36 @@ background-color: #D8D8D8;
 }
 
 /*bat dau xu ly header tai day*/
+
+a.nav-link.active {
+    color: black;
+}
+
+a.nav-link {
+    margin: 0px;
+    padding:  10px;
+    color: gray;
+    transition: 0.5s;
+   
+}
+
+a.nav-link:hover {
+  
+    background-color:#7f7a7a;
+    text-decoration: none;
+    border-radius:5%;
+    border: none;
+    
+}
+li.nav-item {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0px;
+    margin:0px;
+     margin-top: 25px;
+}
+
+
 #header{
 	background:linear-gradient(
       rgba(246, 0, 255, 0.08), 
@@ -156,7 +186,7 @@ background-color: #D8D8D8;
 }
 
 .center {
-	margin-left: 50%;
+	margin-left: 58%;
 	
 }
 
@@ -168,7 +198,9 @@ background-color: #D8D8D8;
 #cart {
 	width: 31px;
 	height: 35px;
-	margin-left: 10px;
+	margin-left: 19px;
+	margin-top: 19px;
+	margin-right: 5px;
 }
 
 .text {

@@ -44,8 +44,8 @@
 		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 		  <div class="center">
 		    <ul class="navbar-nav mr-auto">
-		      <li class="nav-item active">
-		        <a class="nav-link" href="#">Trang chủ <span class="sr-only">(current)</span></a>
+		      <li class="nav-item ">
+		        <a class="nav-link active" href="#">Trang chủ</a>
 		      </li>
 		       <li class="nav-item">
 		        <a class="nav-link" href="#">Sản phẩm</a>
@@ -65,7 +65,7 @@
 		      <li class="nav-item">
 		        <a class="nav-link" href="#">Đăng ký</a>
 		      </li>
-		      
+		     
 		      <img src='<c:url value="/resources/img/cart.png"/>' id="cart">
 		    </ul>
 		    </div>
@@ -84,6 +84,7 @@
 			  	<h1 class="wow bounceInDown " data-wow-duration="1s">Vina Shop</h1> 
 			  	<p class="wow bounceInDown " data-wow-duration="1s">Chào mừng bạn đến website của chúng tôi</p> 
 			  <button class="btn btn-success wow bounceInDown " data-wow-duration="1.5s">See more</button>
+			  
 			</div>
 			</div>
 			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">

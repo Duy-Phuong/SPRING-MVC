@@ -37,7 +37,10 @@
 			  
 			  <br>
 			  <input type="submit" value="Submit" id="button">
+			   <span id="dangnhap"> DANG NHAP</span> 
 			</form>
+			
+			<p style="text-align: center; color: red;">${msg}</p>
 			
 			<div id="hinh">
 				<img alt="ss" src='<c:url value="/resources/img/icon_facebook.png"/>'/>
