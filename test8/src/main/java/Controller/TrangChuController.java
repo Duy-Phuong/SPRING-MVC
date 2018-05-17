@@ -8,6 +8,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import javax.servlet.http.HttpSession;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +21,12 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.SessionAttribute;
+import org.springframework.web.bind.annotation.SessionAttributes;
+
+import entity.SanPham;
+
+import service.SanPhamService;
 
 import entity.*;
 
@@ -26,16 +34,21 @@ import entity.*;
 
 
 @Controller
-@RequestMapping("/")
+@RequestMapping("/") //@SessionAttributes("name")  //bai 65
+@SessionAttributes("email")  //bai 65
 public class TrangChuController {
 
 	//video 40
 			@Autowired
 			SessionFactory mySessionFactory;
+			
+	//bai 69
+			@Autowired
+			SanPhamService sanPhamService;
 	
 	@GetMapping()
 	@Transactional			//tự động close
-	public String display(ModelMap model) {
+	public String display(  ModelMap model) { //bai 67 mmoi them 2 cai dau 
 
 //		
 //		//
@@ -72,6 +85,22 @@ public class TrangChuController {
 //		
 //		session.save(s);
 		
+		
+		//bai 67 chỉnh sửa chỗ đang nhập  @SessionAttribute("name") String temp, HttpSession httpSession,
+//		if(httpSession.getAttribute("name") != null) {
+//			System.out.println(httpSession.getAttribute("name")); //xuat ra null thay vi loi
+//			String s = (String) httpSession.getAttribute("name");
+//			model.addAttribute("chucaidau", s);
+//		}
+		
+		
+		//bai 69
+		List<SanPham> listSanPhams = sanPhamService.LayDanhSachSanPhamLimit(0);
+		for (SanPham sp :  listSanPhams) {
+			System.out.println(sp.getTensanpham());
+		}
+		model.addAttribute("listSanPham", listSanPhams);
+		//modelMap.addAttribute("danhmuc",danhMucSanPhams);
 
 		return "trangchu";
 	}

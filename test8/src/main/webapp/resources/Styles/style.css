@@ -94,9 +94,22 @@ img {
 	color: red;
 }
 
+span#header-top-left:hover {
+    cursor: pointer;
+    color: powderblue;
+}
+
 #header-top-right {
 	display: inline-block;
 	color: orange;
+}
+.dangkitk {
+	display: none;
+}
+
+span#header-top-right:hover {
+    cursor: pointer;
+    color: powderblue;
 }
 
 #top1 {
@@ -105,7 +118,7 @@ img {
 	}
 	
 .active{
-	color: red;
+	color: red !important;
 }
 
 #hinh{
@@ -131,8 +144,12 @@ background-color: #D8D8D8;
 background-color: #D8D8D8;
 }
 
+#dangnhap {
+	display: block;
+	text-align: center;
+}
 
-#button {
+.button {
 	padding-left: 15px;
 	background-color: powderblue;
 	width:100%;
@@ -402,3 +419,10 @@ footer img{
 .button1, .material-textinput, .area {
 	width: 100%;
 }
+
+/*page chi tiet*/
+div#navbarSupportedContent1 {
+    background-color: black;
+    padding-bottom: 12px;
+}
+

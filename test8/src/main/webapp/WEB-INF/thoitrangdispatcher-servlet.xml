@@ -25,4 +25,7 @@
 	
 	<!-- bai 25 -->
 	<mvc:resources mapping="/resources/**" location="/resources/"/>
+	<!-- bai89 -->
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"/>
+	
 </beans>

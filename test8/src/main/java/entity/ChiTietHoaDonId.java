@@ -8,7 +8,7 @@ import javax.persistence.Embeddable;
 public class ChiTietHoaDonId implements Serializable{
 	
 	int idhoadon;
-	int idsanpham;
+	int idchitietsanpham;
 	
 	public int getMahoadon() {
 		return idhoadon;
@@ -17,10 +17,10 @@ public class ChiTietHoaDonId implements Serializable{
 		this.idhoadon = idhoadon;
 	}
 	public int getMachitietsanpham() {
-		return idsanpham;
+		return idchitietsanpham;
 	}
-	public void setMachitietsanpham(int idsanpham) {
-		this.idsanpham = idsanpham;
+	public void setMachitietsanpham(int idchitietsanpham) {
+		this.idchitietsanpham = idchitietsanpham;
 	}
 	
 	

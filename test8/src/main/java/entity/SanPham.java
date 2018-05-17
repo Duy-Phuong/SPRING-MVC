@@ -27,10 +27,9 @@ public class SanPham {
 	String gia;
 	String mota;
 	String hinhsanpham;
-	//String gianhcho;
+	String gianhcho;
 	
-	//@OneToMany(fetch=FetchType.EAGER ,cascade=CascadeType.ALL)
-	@OneToMany(cascade=CascadeType.ALL)
+	@OneToMany(fetch=FetchType.EAGER ,cascade=CascadeType.ALL) // bai 73 //@OneToMany(cascade=CascadeType.ALL)
 	@JoinColumn(name="idsanpham")
 	Set<ChiTietSanPham> chitietsanpham;
 	
@@ -42,12 +41,12 @@ public class SanPham {
 	
 	
 	
-//	public String getGianhcho() {
-//		return gianhcho;
-//	}
-//	public void setGianhcho(String gianhcho) {
-//		this.gianhcho = gianhcho;
-//	}
+	public String getGianhcho() {
+		return gianhcho;
+	}
+	public void setGianhcho(String gianhcho) {
+		this.gianhcho = gianhcho;
+	}
 	public Set<ChiTietSanPham> getChitietsanpham() {
 		return chitietsanpham;
 	}

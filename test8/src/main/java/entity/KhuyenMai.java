@@ -22,7 +22,7 @@ public class KhuyenMai {
 	String ngayketthuc;
 	
 	String mota;
-	String hinhkhuyenmai;
+	String hinhthuckhuyenmai;
 	
 	@ManyToMany(cascade=CascadeType.ALL)
 	@JoinTable(name="chitietkhuyenmai",
@@ -79,11 +79,11 @@ public class KhuyenMai {
 	}
 
 	public String getHinhkhuyenmai() {
-		return hinhkhuyenmai;
+		return hinhthuckhuyenmai;
 	}
 
 	public void setHinhkhuyenmai(String hinhkhuyenmai) {
-		this.hinhkhuyenmai = hinhkhuyenmai;
+		this.hinhthuckhuyenmai = hinhkhuyenmai;
 	}
 
 	public Set<SanPham> getDanhsachsanpham() {

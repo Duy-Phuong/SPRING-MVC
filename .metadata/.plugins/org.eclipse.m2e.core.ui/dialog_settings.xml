@@ -50,6 +50,8 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\admin1\Documents\workspace-sts-3.9.2.RELEASE"/>
+			<item value="C:\Users\admin1\Documents\workspace-sts-3.9.2.RELEASE\test1\target"/>
 			<item value="C:\Users\admin1\Documents\workspace-sts-3.9.2.RELEASE\test2\src\main\java\test1\AddController.java"/>
 			<item value="C:\Users\admin1\Documents\workspace-sts-3.9.2.RELEASE\test1"/>
 			<item value="C:\Users\admin1\Documents\workspace-sts-3.9.2.RELEASE\test1\src\main\resources\IoC.xml"/>
@@ -71,18 +73,19 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.duyphuong.test3"/>
-			<item value="com.duyphuong.test2"/>
-			<item value="com.duyphuong"/>
-			<item value="com.duyphuong.test1"/>
+			<item value="com.duyphuong.bai1"/>
+			<item value="com.duyphuong.demo1"/>
+			<item value="com.duyphuong.demo"/>
+			<item value="com.duyphuong.video1"/>
 		</list>
 		<list key="groupId">
 			<item value="com.duyphuong"/>
 		</list>
 		<list key="artifactId">
-			<item value="test3"/>
-			<item value="test2"/>
-			<item value="test1"/>
+			<item value="bai1"/>
+			<item value="demo1"/>
+			<item value="demo"/>
+			<item value="video1"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

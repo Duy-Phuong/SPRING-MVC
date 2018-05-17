@@ -29,17 +29,38 @@
 			</div>	
 			<div id="container-login-right">
 			<div id="top1"><span id="header-top-left" class="active">Đăng nhập</span>/ <span id="header-top-right">Đăng kí</span></div>
-			<form method="post" action="" >
-			  Name:<br>
-			  <input type="text" name="name" class="email"><br>
-			   Pass:<br>
-			  <input type="password" name="pass" class="pass"><br>
-			  
-			  <br>
-			  <input type="submit" value="Submit" id="button">
-			   <span id="dangnhap"> DANG NHAP</span> 
-			</form>
-			
+			<div class="dangnhaptk">
+				<form action="" > <!-- method="post" -->
+				  Name:<br>
+				  <input type="text" name="name" class="email" id="name"><br>
+				   Pass:<br>
+				  <input type="password" name="pass" class="pass" id="pass"><br>
+				  
+				  <br>
+				  <!--  <input type="submit" value="Submit" class="button"> -->
+				   <span id="dangnhap"  class="button btn btn-success"> ĐĂNG NHẬP</span>
+			 
+				</form>
+			</div>
+					<br>
+			<div class="dangkitk">
+				<form action="" method="post"> <!-- method="post" -->
+				  Name:<br>
+				  <input type="text" name="name1" class="email" id="name1"><br>
+				   Pass:<br>
+				  <input type="password" name="pass1" class="pass" id="pass1"><br>
+				   Nhập lại Pass:<br>
+				  <input type="password" name="pass2" class="pass" id="pass2" placeholder="Nhập lại mật khẩu"><br>
+				  <br>
+				   <input type="submit" value="ĐĂNG KÍ" class="button btn btn-success">
+				  <!--  <span id="dangnhap"  class="button btn btn-success"> ĐĂNG KÍ</span> -->
+			 
+				</form>
+			</div>
+			  <!-- <span id="dangnhap"> DANG NHAP</span>  -->
+			   <span id="ketqua"> </span> 
+			   <span>bai 65 ten dang nhap: ${name } </span>
+			   <span>bai 65 ten dang nhap session: ${email } </span>
 			<p style="text-align: center; color: red;">${msg}</p>
 			
 			<div id="hinh">

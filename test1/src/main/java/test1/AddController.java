@@ -39,11 +39,13 @@ public class AddController {
 	System.out.println("Giam doc: " + nv2.getGiamDoc().getTenNhanVien() + " - " + nv2.getGiamDoc().getChucVu());
 		
 	//video 8
+	System.out.println("============ list str=============");
+
 		for(String s : nv2.getList()) {
 			System.out.println(s);
 		}
 		
-		System.out.println("============Giam doc=============");
+		System.out.println("============list Giam doc=============");
 		for(GiamDoc s2 : nv2.getListGiamDoc()) {
 			System.out.println("Giam doc: " + s2.getTenNhanVien() + " - " + s2.getChucVu());
 		}
@@ -64,4 +66,15 @@ public class AddController {
 	return "trangchu";
 	}
 	//neu thêm index.jsp trong web-inf thì thay lại là /trang chu
+	
+	@RequestMapping("/demo")
+	@ResponseBody
+	public String demo() {
+		return "demo";
+	}
+	
+	@RequestMapping("/trangchu")
+	public String demo1() {
+		return "trangchu";
+	}
 }

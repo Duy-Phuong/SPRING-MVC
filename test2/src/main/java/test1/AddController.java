@@ -46,7 +46,7 @@ public class AddController {
 		
 		Resource resource = cus.getResource("classpath:data.txt");
 		
-		//Resource resource = context.getResource("classpath:data.txt");
+		//Resource resource = context.getResource("classpath:data.txt"); co the thay nd bên trong de lay dl tu mang
 		//neu bo data ra o ngoai thi thay la file://data.txt
 		InputStream inputstream;
 		try {

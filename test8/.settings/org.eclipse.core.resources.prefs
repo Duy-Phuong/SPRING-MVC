@@ -1,4 +1,5 @@
 eclipse.preferences.version=1
+encoding//src/main/java/Controller/APIController.java=UTF-8
 encoding//src/main/java/Controller/DangNhap.java=UTF-8
 encoding//src/main/java/Controller/TrangChuController.java=UTF-8
 encoding//src/main/java/DAO/NhanVienDAO.java=UTF-8

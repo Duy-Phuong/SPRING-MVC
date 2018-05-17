@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import NhanVienDAOImp.NhanVienImp;
 import entity.NhanVien;
@@ -18,6 +19,26 @@ public class NhanVienDAO implements NhanVienImp{
 	@Autowired
 	SessionFactory mySessionFactory;
 	
+	
+
+	
+	
+	@Transactional
+	public boolean ThemNhanVien(NhanVien nhanVien) {
+		Session session = mySessionFactory.getCurrentSession();
+		int manhanvien = (Integer) session.save(nhanVien);
+		System.out.println("ma nhan vien: " + manhanvien);
+		if(manhanvien > 0){
+			return true;
+		}else{
+			return false;
+		}
+	}
+
+
+
+
+	@Transactional
 	public boolean kiemTraDangNhap(String name, String pass) {
 		Session session = mySessionFactory.getCurrentSession();
 		//trả về gtri đơn
@@ -35,4 +56,6 @@ public class NhanVienDAO implements NhanVienImp{
 		}
 		return true;
 	}
+	
+	
 }

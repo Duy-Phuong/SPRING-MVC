@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+  
+<struts>
+   <constant name="struts.enable.DynamicMethodInvocation"
+       value="true" />
+   <!-- sua llai thanh true de hien button save -->
+         
+   <constant name="struts.devMode" value="true" />
+   <constant name="struts.custom.i18n.resources"
+       value="ApplicationResources" />
+  
+   <package name="default" namespace="/" extends="struts-default">
+       <action name="login"
+           class="action.LoginAction">
+           <result name="success" type="redirect">/userInfo</result>
+           <result name="error">/WEB-INF/pages/Login.jsp</result>
+       </action>
+        
+       <action name="userInfo"
+           class="action.UserInfoAction">
+           <result name="userInfoPage">/WEB-INF/pages/UserInfo.jsp</result>
+       </action>
+        
+        
+       <action name="hello"
+           class="action.HienThiAction">
+           <result name="success">/WEB-INF/pages/hello.jsp</result>
+       </action>
+       
+       <action name="ht"
+           class="action.HienThiAction" method="hienthi">
+           <result name="hienthi">/WEB-INF/pages/hienthi.jsp</result>
+       </action>
+       
+       <action name="dangki"
+           class="action.DangKiAction">
+           <result name="input">dangki.jsp</result>
+           <result name="success">/WEB-INF/pages/ketqua.jsp</result>
+           <result name="fail">dangki.jsp</result>
+
+       </action>
+       
+       <action name="cacl"
+           class="action.CaclAction">
+           <result name="success">/WEB-INF/pages/ketquacacl.jsp</result>
+           <result name="fail">index.jsp</result>
+
+       </action>
+   </package>  
+     
+</struts>

@@ -116,11 +116,14 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\admin1\Documents\workspace-sts-3.9.2.RELEASE"/>
+			<item value="C:\Users\admin1\Documents\workspace-sts-3.9.2.RELEASE\Struts2"/>
 			<item value="C:\Users\admin1\Documents\workspace-sts-3.9.2.RELEASE\test8"/>
 			<item value="C:\Users\admin1\Documents\workspace-sts-3.9.2.RELEASE\Spring3MVC"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>
+			<item value="C:\Users\admin1\Documents\workspace-sts-3.9.2.RELEASE\test5\pom.xml"/>
 		</list>
 	</section>
 	<section name="org.springsource.ide.eclipse.commons.quicksearch.ui.QuickSearchDialog.DIALOG_SETTINGS">

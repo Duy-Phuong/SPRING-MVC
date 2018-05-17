@@ -20,8 +20,8 @@ public class HoaDon {
 	String diachigiaohang;
 	Boolean tinhtrang;
 	String ngaylap;
-	String hinhthucgiaohang;
-	String ghichu;
+//	String hinhthucgiaohang;
+//	String ghichu;
 	
 	//1 hd có nhiu chi tiet
 	@OneToMany(cascade=CascadeType.ALL)
@@ -29,21 +29,21 @@ public class HoaDon {
 	Set<ChiTietHoaDon> danhsachchitiethoadon;
 
 	
-	public String getHinhthucgiaohang() {
-		return hinhthucgiaohang;
-	}
-
-	public void setHinhthucgiaohang(String hinhthucgiaohang) {
-		this.hinhthucgiaohang = hinhthucgiaohang;
-	}
-
-	public String getGhichu() {
-		return ghichu;
-	}
-
-	public void setGhichu(String ghichu) {
-		this.ghichu = ghichu;
-	}
+//	public String getHinhthucgiaohang() {
+//		return hinhthucgiaohang;
+//	}
+//
+//	public void setHinhthucgiaohang(String hinhthucgiaohang) {
+//		this.hinhthucgiaohang = hinhthucgiaohang;
+//	}
+//
+//	public String getGhichu() {
+//		return ghichu;
+//	}
+//
+//	public void setGhichu(String ghichu) {
+//		this.ghichu = ghichu;
+//	}
 
 	public int getMahoadon() {
 		return idhoadon;

@@ -71,4 +71,5 @@
 	
 	<bean name="hocsinh" class="entity.HocSinh">
 	</bean>
+	
 </beans>
